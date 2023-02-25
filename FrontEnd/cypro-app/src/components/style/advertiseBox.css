@@ -1,0 +1,16 @@
+.advertiseBox{
+    width: 100%;
+    margin: auto;
+    height: 300px;
+    margin-top: 10px;
+    display: flex;
+}
+.advertiseBox>div{
+    width: 520px;
+    margin-left: 10px;
+}
+.advertiseBox>div>img{
+    width:500px;
+    height: 300px;
+    
+}
