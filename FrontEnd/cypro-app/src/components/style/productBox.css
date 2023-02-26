@@ -1,0 +1,31 @@
+#productBox {
+  width: 95%;
+  height: 500px;
+  margin: auto;
+  color: white;
+  display: flex;
+}
+.imageStyle {
+  width: 350px;
+  height: 300px;
+}
+.singleProductBox{
+    margin: auto;
+    text-align: center;
+}
+.singleProductBox>h2{
+    margin: 0%;
+}
+#submitButton{
+    border: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 30px;
+    font-size: small;
+    color: aliceblue;
+    background: linear-gradient(to right, #ff0080, #7928ca); 
+}
+#submitButton:hover{    
+    background: linear-gradient(to left, #fc466b, #3f5efb);
+    transform:scale(1.1)
+}

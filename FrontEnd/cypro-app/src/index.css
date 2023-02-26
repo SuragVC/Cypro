@@ -1,0 +1,38 @@
+body {
+  margin: 0%;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 500px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+a{
+  color: #0a0a0a;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+::-webkit-scrollbar {
+  width: 0.5ch;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e31b1b;
+}
+
