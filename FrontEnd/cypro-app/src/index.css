@@ -1,6 +1,7 @@
 body {
   margin: 0%;
   background-color: black;
+  color: white;
   font-family: "Poppins", sans-serif;
 }
 .each-slide-effect > div {
@@ -36,3 +37,12 @@ a{
   background-color: #e31b1b;
 }
 
+.marginZero{
+  margin:0%
+}
+.textCenter{
+  text-align: center;
+}
+.flexBox{
+  display: flex;
+}

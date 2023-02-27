@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import React from "react";
 import "./style/navbar.css";
 import userImage from "../images/UserImage.webp";
@@ -34,7 +34,7 @@ export function Navbar() {
             </h4>
         </Box>
         <Box className="profileBox">
-          <img src={userImage} alt="userImage" />
+          <img src={userImage} alt="user" />
         </Box>
       </Box>
     </Box>

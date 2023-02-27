@@ -8,19 +8,19 @@ export default function AdvertiseBox(props) {
       <Box>
         <img
           src={props.images.add_1}
-          alt="image 1"
+          alt="Advertise"
         />
       </Box>
       <Box>
         <img
           src={props.images.add_2}
-          alt="image 2"
+          alt="Advertise"
         />
       </Box>
       <Box>
         <img
           src={props.images.add_3}
-          alt="image 3"
+          alt="Advertise"
         />
       </Box>
     </Box>

@@ -1,0 +1,39 @@
+#footerBox{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;   
+}
+#footerBox>div{
+    padding-left: 20px;
+}
+.footerInsideBox{
+    height: 300px;
+    border: solid red;
+    flex-basis: calc(95%/3);
+}
+.footerLogoBox{
+    margin-top: 20px;
+    padding-left: 100px;
+}
+.footerLogoBox>h2{
+    margin:0%;
+    color: rgb(255, 255, 255);
+}
+.footerLogoBox>img{
+    margin-right: 20px;
+}
+.footerIconBox{
+    margin: auto;
+    width: 85%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 100px;
+}
+i{
+    font-size: 30px;
+}
+i:hover{
+    cursor: pointer;
+}
