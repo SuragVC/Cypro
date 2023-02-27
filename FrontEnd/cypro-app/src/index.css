@@ -46,3 +46,8 @@ a{
 .flexBox{
   display: flex;
 }
+.centerBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -9,7 +9,6 @@
 }
 .footerInsideBox{
     height: 300px;
-    border: solid red;
     flex-basis: calc(95%/3);
 }
 .footerLogoBox{
@@ -36,4 +35,12 @@ i{
 }
 i:hover{
     cursor: pointer;
+}
+.serviceBox{
+    flex-basis: calc(100%/2);
+}
+.downloadableImages>img{
+    background-color: aliceblue;
+    width:220px;
+    height:150px
 }
