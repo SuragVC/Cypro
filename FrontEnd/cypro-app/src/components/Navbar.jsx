@@ -14,6 +14,12 @@ export function Navbar() {
   const handleLogoClick = () => {
     navigate('/');
   };
+  const handleProductsClick=()=>{
+    navigate('/products')
+  }
+  const handleProfileBoxClick=()=>{
+    navigate('/signIn')
+  }
   
   return (
     <Box className="navbar">
@@ -29,11 +35,14 @@ export function Navbar() {
           <h4>Wallet</h4>
         </Box>
         <Box>
+          <h4 id="products" onClick={handleProductsClick}>Products</h4>
+        </Box>
+        <Box>
             <h4 id="aboutUs" onClick={handleAboutUsClick}>
               About Us
             </h4>
         </Box>
-        <Box className="profileBox">
+        <Box className="profileBox" id="profileBox" onClick={handleProfileBoxClick}>
           <img src={userImage} alt="user" />
         </Box>
       </Box>
