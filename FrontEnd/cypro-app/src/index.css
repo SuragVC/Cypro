@@ -4,6 +4,9 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
 }
+.container{
+  margin-top: 70px;
+}
 .each-slide-effect > div {
   display: flex;
   align-items: center;

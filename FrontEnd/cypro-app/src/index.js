@@ -5,12 +5,15 @@ import App from "./App";
 import "./index.css";
 import { Navbar } from "./components/Navbar";
 import Footer from "./components/Footer";
+import { Box } from "@mui/material";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <React.StrictMode>
       <Navbar />
-      <App />
+      <Box className='container'>
+        <App />
+      </Box>
       <Footer />
     </React.StrictMode>
   </BrowserRouter>
