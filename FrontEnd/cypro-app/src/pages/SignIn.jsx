@@ -10,6 +10,8 @@ import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import "./style/SignIn.css";
 import { Button } from "@mui/material";
+import GoogleLogo from '../images/googlelogo.png'
+import GithubLogo from '../images/gitlogo.png'
 export default function SignIn() {
   const [showPassword, setShowPassword] = React.useState(false);
   const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -21,6 +23,7 @@ export default function SignIn() {
   return (
     <Box className="centerBox signinDiv">
       <Box className="signinBox">
+      <Box className='centerBox'  style={{color:'blue'}}><h3>Sign In</h3></Box>
         <TextField
           sx={{ m: 1, width: "25ch" }}
           helperText="Please enter your email"
@@ -52,6 +55,12 @@ export default function SignIn() {
         <Box className="centerBox">
           <Button variant="contained">Submit</Button>
         </Box>
+        <Box className='centerBox signInboxLogos'>
+          <img src={GoogleLogo} alt='googleLogo'/>
+          <img src={GithubLogo} alt='githubLogo'/>
+        </Box>
+        <Box style={{color:'black'}}>
+          <p style={{fontSize:'12px'}}>New to Cypro ?<span style={{color:'red',fontSize:'13px'}}>Join Now</span></p></Box>
       </Box>
     </Box>
   );

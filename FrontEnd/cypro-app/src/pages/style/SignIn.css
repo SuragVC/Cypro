@@ -1,6 +1,6 @@
 .signinDiv{
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
 .signinBox{
     width: 280px;
@@ -8,4 +8,21 @@
     padding: 20px;
     background-color: aliceblue;
     background-blend-mode: multiply;
+}
+.signInboxLogos{
+    margin-top: 10px;
+}
+.signInboxLogos>img{
+    width:30px;
+    height: 30px;
+    margin: 10px;
+}
+.signInboxLogos>img:hover{
+    cursor: pointer;
+}
+span{
+    margin-left: 10px;
+}
+span:hover{
+    cursor: pointer;
 }
