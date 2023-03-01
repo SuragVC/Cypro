@@ -42,7 +42,7 @@ export function Navbar() {
               About Us
             </h4>
         </Box>
-        <Box className="profileBox" id="profileBox" onClick={handleProfileBoxClick}>
+        <Box className="profileBox" onClick={handleProfileBoxClick}>
           <img src={userImage} alt="user" />
         </Box>
       </Box>
