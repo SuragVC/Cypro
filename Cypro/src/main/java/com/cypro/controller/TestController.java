@@ -7,8 +7,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestController {
-	@GetMapping("test")
-	public ResponseEntity<String> test(){
-		return new ResponseEntity<String>("working",HttpStatus.OK);
+
+	@GetMapping("/url")
+	private ResponseEntity<String> testAll() {
+		return new ResponseEntity<String>("Working",HttpStatus.OK);
+
+	}
+	@GetMapping("/admin")
+	private ResponseEntity<String> testAdmin() {
+		return new ResponseEntity<String>("Working Admin",HttpStatus.OK);
+
+	}
+	@GetMapping("/user")
+	private ResponseEntity<String> testCustomer() {
+		return new ResponseEntity<String>("Working Customer",HttpStatus.OK);
+
 	}
 }
