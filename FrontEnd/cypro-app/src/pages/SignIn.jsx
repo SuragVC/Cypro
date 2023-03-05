@@ -65,7 +65,7 @@ export default function SignIn() {
           <img src={GithubLogo} alt='githubLogo'/>
         </Box>
         <Box style={{color:'black'}}>
-          <p style={{fontSize:'12px'}}>New to Cypro ?<span style={{color:'red',fontSize:'13px'}} onClick={sigupButton}>Join Now</span></p></Box>
+          <p style={{fontSize:'12px'}}>New to Cypro ?<span onClick={sigupButton}>Join Now</span></p></Box>
       </Box>
     </Box>
   );
