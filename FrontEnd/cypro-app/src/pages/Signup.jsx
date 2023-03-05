@@ -4,13 +4,13 @@ import VideoBox from "../components/VideoBox";
 import panel from "../images/panel.mp4";
 export default function Signup() {
   const formBox = {
-    width: 500,
-    height: 400,
+    width: 400,
+    height: "auto",
     position: "absolute",
-    top:150,
+    top:130,
     left: "calc(35% - 50px)",
     padding: "1em",
-    backgroundImage: "linear-gradient(to right, rgba(139, 0, 0, 0.8), rgba(139, 0, 0, 0.4))",
+    backgroundImage: "linear-gradient(to right, rgba(255, 255, 255, 1), rgba(2, 2, 2, 0.1))",
     borderRadius:20,
     boxShadow: "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px insert"
   };
