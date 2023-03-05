@@ -12,6 +12,7 @@ import "./style/SignIn.css";
 import { Button } from "@mui/material";
 import GoogleLogo from '../images/googlelogo.png'
 import GithubLogo from '../images/gitlogo.png'
+import { useNavigate } from 'react-router-dom';
 export default function SignIn() {
   const [showPassword, setShowPassword] = React.useState(false);
   const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -20,6 +21,10 @@ export default function SignIn() {
   ) => {
     event.preventDefault();
   };
+  const Navigate = useNavigate();
+  const sigupButton=()=>{
+    Navigate("/signup")
+  }
   return (
     <Box className="centerBox signinDiv">
       <Box className="signinBox">
@@ -60,7 +65,7 @@ export default function SignIn() {
           <img src={GithubLogo} alt='githubLogo'/>
         </Box>
         <Box style={{color:'black'}}>
-          <p style={{fontSize:'12px'}}>New to Cypro ?<span style={{color:'red',fontSize:'13px'}}>Join Now</span></p></Box>
+          <p style={{fontSize:'12px'}}>New to Cypro ?<span style={{color:'red',fontSize:'13px'}} onClick={sigupButton}>Join Now</span></p></Box>
       </Box>
     </Box>
   );

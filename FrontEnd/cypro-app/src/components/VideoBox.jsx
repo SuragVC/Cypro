@@ -7,8 +7,8 @@ export default function VideoBox(props) {
   };
   const videoStyle = {
     width: "100%",
-    height: 500,
-    transform: "scaleX(2)"
+    transform: "scaleX(2)",
+    height:props.sx.height
   };
   return (
     <Box style={videoBoxStyle}>

@@ -6,7 +6,7 @@ import "./style/Homepage.css";
 import  gearAdvertise  from "../images/6.png"
 import  asusAdvertise  from "../images/7.jpg"
 import VideoBox from "../components/VideoBox";
-import panel from "../images/panel.mp4";
+import backgroundVideo from '../images/SignUp.mp4'
 import ProductBox from "../components/ProductBox";
 import { productArr_1,productArr_2 } from "../components/scripts/products";
 
@@ -24,7 +24,7 @@ export default function Homepage() {
       <Box ><img className="homePageAdvertiseImage" src={gearAdvertise} alt="Gear Advertise" /></Box>
       <ProductBox products={Object.values(productArr_2)} />
       <Box className="headers"><Typography variant="h2">Custom PC Build</Typography></Box>
-      <VideoBox link={panel}/>
+      <VideoBox link={backgroundVideo} sx={{height:"500px"}}/>
       <AdvertiseBox images={advertiseImages}/>
       <ProductBox products={Object.values(productArr_1)} />
       <Box ><img className="homePageAdvertiseImage" src={asusAdvertise} alt="Asus Advertise" /></Box>

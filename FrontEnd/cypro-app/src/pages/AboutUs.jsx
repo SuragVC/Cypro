@@ -7,7 +7,7 @@ import panel from "../images/whyUs.mp4";
 export default function AboutUs() {
   return (
     <>
-    <VideoBox link={panel} />
+    <VideoBox link={panel}  sx={{height:"500px"}}/>
     <Box className="wordBox">
       <Typography varient="p">
       At Cypro, we are passionate about providing customized computer building solutions that are tailored to your specific needs. Our team is made up of experienced professionals who share a commitment to excellence, innovation, and customer satisfaction. We believe that the right computer can help you achieve your goals, whether that's gaming, graphic design, or professional use.
