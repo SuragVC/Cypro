@@ -2,6 +2,8 @@ package com.cypro.entity;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -20,6 +22,8 @@ import lombok.Setter;
 public class Wallet {
 	@Id
 	private Integer walletId;
+	private Double walletBallance;
+	@JsonIgnore
 	@OneToMany(mappedBy = "wallet",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
 	private List<Purchase> purchases;
 }

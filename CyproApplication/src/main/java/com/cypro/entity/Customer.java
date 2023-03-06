@@ -1,5 +1,7 @@
 package com.cypro.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -42,5 +44,9 @@ public class Customer{
 	@Pattern(regexp = "\\d+", message="Mobile number should be digits only!")
 	private String mobileNo;
 	@OneToOne
+	@JsonIgnore
 	private Wallet wallet;
+	@OneToOne
+	@JsonIgnore
+	private Cart cart;
 }

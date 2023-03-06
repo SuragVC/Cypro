@@ -1,4 +1,6 @@
 package com.cypro.entity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
@@ -28,5 +30,6 @@ public class Product {
 	private String details;
 	@ManyToOne
 	@JoinColumn(name="purchaseId")
+	@JsonIgnore
 	private Purchase purchase;
 }

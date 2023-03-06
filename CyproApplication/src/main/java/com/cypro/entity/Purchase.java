@@ -4,6 +4,8 @@ import java.time.LocalTime;
 import java.util.Date;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -28,10 +30,13 @@ public class Purchase {
 	private Date purchaseDate;
 	private LocalTime purchaseTime;
 	private Double totalAmount;
+	@JsonIgnore
 	@OneToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
 	private Address address;
+	@JsonIgnore
 	@OneToMany(mappedBy = "purchase",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
 	private List<Product> products;
+	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name="walletId")
 	private Wallet wallet;
