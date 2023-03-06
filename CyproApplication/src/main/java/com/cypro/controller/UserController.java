@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cypro.entity.User;
+import com.cypro.entity.Customer;
 import com.cypro.exception.UserException;
 import com.cypro.services.UserServicesImpl;
 
@@ -30,12 +30,12 @@ public class UserController {
 		this.userServices = userServices;
 	}
 	@PostMapping("/signup")
-	public ResponseEntity<User> signUpUser(@RequestBody @Valid User user) throws UserException{
-		return new ResponseEntity<User>( userServices.addUser(user),HttpStatus.OK);
+	public ResponseEntity<Customer> signUpUser(@RequestBody @Valid Customer user) throws UserException{
+		return new ResponseEntity<Customer>( userServices.addUser(user),HttpStatus.OK);
 	}
 	@GetMapping("/login")
-	public ResponseEntity<User> logInUser(@Email String email,@NotNull @NotBlank String password) throws UserException{
-		return new ResponseEntity<User>( userServices.logInUser(email, password),HttpStatus.OK);
+	public ResponseEntity<Customer> logInUser(@Email String email,@NotNull @NotBlank String password) throws UserException{
+		return new ResponseEntity<Customer>( userServices.logInUser(email, password),HttpStatus.OK);
 	}
 	
 }
