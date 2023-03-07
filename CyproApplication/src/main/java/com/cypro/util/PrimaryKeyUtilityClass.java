@@ -20,21 +20,22 @@ public class PrimaryKeyUtilityClass {
 	}
 	@PostConstruct
     public void init() {
-		Optional<PrimaryKeyGenerator> keyObjectOpt=primaryKeyGeneratorDao.findById(1L);
+		Optional<PrimaryKeyGenerator> keyObjectOpt=primaryKeyGeneratorDao.findById(1);
 		if(keyObjectOpt.isEmpty()) {
-			Long id=(long)1;
-			Long key=(long)1;
+			Integer id=1;
+			Integer key=1;
 			PrimaryKeyGenerator keyObject=new PrimaryKeyGenerator(id,key);
 			primaryKeyGeneratorDao.save(keyObject);
 		}
     }
 	@Bean
-	public Long primaryKey() {
-		Optional<PrimaryKeyGenerator> keyObjectOpt=primaryKeyGeneratorDao.findById(1L);
+	public Integer primaryKey() {
+		Optional<PrimaryKeyGenerator> keyObjectOpt=primaryKeyGeneratorDao.findById(1);
 		PrimaryKeyGenerator primaryKey=keyObjectOpt.get();
-		Long key = primaryKey.getNextValue();
-		PrimaryKeyGenerator keyObject=new PrimaryKeyGenerator(1L,key++);
-		primaryKeyGeneratorDao.save(keyObject);
+		Integer key = primaryKey.getNextValue();
+		Integer nextValue=key+1;
+		primaryKey.setNextValue(nextValue);
+		primaryKeyGeneratorDao.save(primaryKey);
 		return key;
 	}
 }

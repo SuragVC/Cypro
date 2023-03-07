@@ -18,6 +18,7 @@ import lombok.Setter;
 public class Cart {
 	@Id
 	private Integer cartId;
+	private Double totalPrice;
 	@OneToMany
 	private List<Product> products;
 }

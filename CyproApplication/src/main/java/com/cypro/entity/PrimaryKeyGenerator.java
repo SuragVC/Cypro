@@ -14,6 +14,6 @@ import lombok.NoArgsConstructor;
 @Table(name="KeyAutoGenerator")
 public class PrimaryKeyGenerator {
 	@Id
-	private Long keyID;
-	private Long nextValue;
+	private Integer keyID;
+	private Integer nextValue;
 }
